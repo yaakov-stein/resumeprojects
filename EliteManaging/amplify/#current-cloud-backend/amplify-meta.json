@@ -1,0 +1,68 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-newcrm-dev-101024-authRole",
+      "UnauthRoleArn": "arn:aws:iam::472520879162:role/amplify-newcrm-dev-101024-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::472520879162:role/amplify-newcrm-dev-101024-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-newcrm-dev-101024-deployment",
+      "UnauthRoleName": "amplify-newcrm-dev-101024-unauthRole",
+      "StackName": "amplify-newcrm-dev-101024",
+      "StackId": "arn:aws:cloudformation:us-east-1:472520879162:stack/amplify-newcrm-dev-101024/64a0bd20-f3c7-11ec-a846-123a42d618fb",
+      "AmplifyAppId": "dp805ilkn63gj"
+    }
+  },
+  "auth": {
+    "newcrm": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [
+          "FACEBOOK",
+          "GOOGLE"
+        ],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": [
+            "REQUIRES_LOWERCASE",
+            "REQUIRES_NUMBERS",
+            "REQUIRES_SYMBOLS",
+            "REQUIRES_UPPERCASE"
+          ]
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-newcrm-dev-101024-deployment/amplify-cfn-templates/auth/newcrm-cloudformation-template.json",
+        "logicalId": "authnewcrm"
+      },
+      "lastPushTimeStamp": "2022-06-24T14:28:56.798Z",
+      "output": {
+        "UserPoolId": "us-east-1_AE5fPrrw5",
+        "AppClientIDWeb": "1tnmt9dps4f8sd6m24h2t69el3",
+        "AppClientID": "22bsjr8oevgc6k3anm7icvoebb",
+        "HostedUIDomain": "uzi4ykvxg4pw-dev",
+        "IdentityPoolId": "us-east-1:91cbc5b6-0beb-460f-8814-a8f060b48fef",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:472520879162:userpool/us-east-1_AE5fPrrw5",
+        "IdentityPoolName": "testAuthIdentityPool__dev",
+        "OAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:3000/\"],\"LogoutURLs\":[\"http://localhost:3000/\"]}",
+        "UserPoolName": "newcrm"
+      },
+      "lastPushDirHash": "/aArmOCk8cXWdWmUvjNsgI5HaUE="
+    }
+  }
+}

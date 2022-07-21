@@ -1,0 +1,5 @@
+{
+  "tableName": "UserDynamoDB",
+  "partitionKeyName": "id",
+  "partitionKeyType": "S"
+}

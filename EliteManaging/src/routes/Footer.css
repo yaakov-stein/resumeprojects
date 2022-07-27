@@ -1,0 +1,41 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 280px;
+    background-color: #7aecae;
+
+}
+.contact{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px;
+
+}
+.footer.ui.grid{
+    margin-top: 5px;
+
+}
+p{
+    font-size: 1.2em;
+}
+#contact-us{
+    margin-left: 6vh;
+    margin-right: 10vh;
+}
+#FAQ{
+    margin-right: 10vh;
+}
+#customer-service{
+    margin-right: 10vh;
+}
+.submit-button.ui.button{
+    margin-left: 1vh;
+}
+.email{
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.social{
+    padding: 10px;
+}

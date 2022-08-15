@@ -1,0 +1,27 @@
+.Participating-Businesses{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    /*background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);*/
+    font-weight: bold;
+    height: 60vh;
+}
+.main{
+    background-color: white;
+}
+
+.segment.ui.segment{
+    border: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    justify-content: center;
+}
+
+.featured {
+    width: 270px;
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: .15em; /* Adjust as needed */
+}
